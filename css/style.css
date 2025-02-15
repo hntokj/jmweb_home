@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.top {
+    width: 100%;
+    text-align: center; 
+    margin-top: 3%;
+}
+header .top img{ /*top画像*/
+    width: 95%;
+    border-bottom: 20px double black;
+}
+body{
+    background-image: url("images/web-bg.jpg");
+    background-size: contain;
+    width:100%;
+}
+
+
+
+/*ボタン⬇️*/
+article ul li a{
+    background-color:rgba(255, 0, 0, 0.7);
+    display:block;
+    padding:20px;
+    font-size: 20px;
+}
+article ul{
+    width: 70%;
+    margin: 20px auto;
+    text-align: center; 
+}
+article ul li{/*ボタンの間*/
+    margin-bottom:15px;
+}
+article ul li a:hover{
+text-decoration: underline double;
+}
+article nav{
+    width:70%;
+    background-image: url("images/web_topぼかし.png"); 
+    background-size: contain;
+    background-size: 100%;
+    margin: 40px auto;
+    padding:10px 0px;
+}
+/*ボタン⬆️*/
+
+
+
+main section h4{
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+main section nav{/*かこい*/
+    width: 95%;
+    background-color: aliceblue;
+    margin: 10px auto;
+}
+main section ul{
+    display:flex;
+    margin: 10px auto;
+}
+main section ul li{
+    font-size: 19px;
+    margin:auto 0px;
+    padding:5px;
+}
+main section ul li a{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+main section nav img{
+    width: 250px;
+    padding-left: 0px;
+    padding: 10px;
+}
+
+
+.anim-box {
+    background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+  }
+
+.bottom{
+    /*background-color: aqua;*/
+    border-top: 3px dashed aliceblue;
+    display:flex;
+}
+.bottom img{
+   width:10%;
+   border-radius: 100%;
+   margin-left: 130px;
+}
+
+.bottom h5{
+    color:aliceblue;
+    font-size: 18px;
+    font-weight: 900;
+    margin: auto 5px;
+}
+.bottom h6{
+    color:aliceblue;
+    font-size: 10px;
+    font-weight: 900;
+    margin: auto 5px;
+
+}
+

@@ -9,7 +9,7 @@ header .top img{ /*top画像*/
     border-bottom: 20px double black;
 }
 body{
-    background-image: url("images/web-bg.jpg");
+    background-image: url("../images/web-bg.jpg");
     background-size: contain;
     width:100%;
 }
@@ -36,7 +36,7 @@ text-decoration: underline double;
 }
 article nav{
     width:70%;
-    background-image: url("images/web_topぼかし.png"); 
+    background-image: url("../images/web_topぼかし.png"); 
     background-size: contain;
     background-size: 100%;
     margin: 40px auto;

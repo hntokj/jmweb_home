@@ -11,6 +11,7 @@ header .top img{ /*top画像*/
 body{
     background-image: url("../images/web-bg.jpg");
     background-size: contain;
+    font-family:"游ゴシック","ヒラギノ角ゴ ProN";
     width:100%;
 }
 
@@ -85,24 +86,24 @@ main section nav img{
     /*background-color: aqua;*/
     border-top: 3px dashed aliceblue;
     display:flex;
+    width:100%;
+    justify-content: center;
 }
 .bottom img{
    width:10%;
    border-radius: 100%;
-   margin-left: 130px;
 }
 
 .bottom h5{
     color:aliceblue;
     font-size: 18px;
     font-weight: 900;
-    margin: auto 5px;
+    margin:auto 5px;
 }
 .bottom h6{
     color:aliceblue;
     font-size: 10px;
     font-weight: 900;
-    margin: auto 5px;
-
+    margin:auto 0px;
 }
 

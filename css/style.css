@@ -228,6 +228,7 @@ main section ul li a:hover {
 }
 
 
+
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 @media screen and (max-width:640px){
 
@@ -243,5 +244,16 @@ main section ul li a:hover {
     color: white;
 }
 
+
+article ul li a {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: white;
+  font-size: 2.2em;
+  padding: 10px;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
 
 }

@@ -7,6 +7,10 @@
     
     <link rel="icon" href="images/web_top.png" type="image/svg+xml" >
     <link rel="icon arternate" href="images/web_top.png" type="image/png">
+<!--グーグルフォント-->
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
     
     <head prefix="og:https://hntokj.github.io/jmweb_home/"/>
     <meta property="og:title" content="jmweb_home"/>
@@ -20,10 +24,26 @@
     <meta name="twitter:card" content="summary_large_image"/> 
     <meta name="twitter:site" content="@jmweb_kui91"/>
     <title>jmweb_home</title>
+
 </head>
 
+<script>  //Java アニメーション
+  window.addEventListener('load', function () {
+    const loader = document.getElementById('loader');
+    loader.style.opacity = '0';
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 1000); // transitionと同じ1秒
+  });
+</script>
+
+<!--スクロールしたら表示(できていない???)-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 <body>
+
+<!--<div id="loader"></div> --白画面フェードアウト-->
+
 <header>
     <div class="top">
         <img src="images/web_top.png" alt="TOP">
@@ -46,77 +66,98 @@
 <section>
     <div class="anim-box"><h4>↓過去に作成したサイトはこちら↓</h4></div>
 
-    <nav>
+    <nav class="sr-fade">
         <ul>
+            <a href="https://hntokj.github.io/jmweb-season25url/">
             <img src="https://hntokj.github.io/jmweb-season25url/images/prodigy.avif" alt="25まとめ">
-            <li><a href="https://hntokj.github.io/jmweb-season25url/"target="_blank">【APEX】シーズン25 情報まとめ!!</a></li> 
+            </a>
+            <li><a href="https://hntokj.github.io/jmweb-season25url/">【APEX】シーズン25 情報まとめ!!</a></li> 
         </ul>
     </nav>
 
-    <nav>
+    <nav class="sr-fade">
         <ul>
+            <a href="https://hntokj.github.io/jmweb-season25weapon/">
             <img src="https://hntokj.github.io/jmweb-season25weapon/images/season25-weaponOGP.webp" alt="25武器調整">
-            <li><a href="https://hntokj.github.io/jmweb-season25weapon/"target="_blank">【APEX】S25パッチノートまとめ!!（武器調整編）</a></li> 
+            </a>
+            <li><a href="https://hntokj.github.io/jmweb-season25weapon/">【APEX】S25パッチノートまとめ!!（武器調整編）</a></li> 
         </ul>
     </nav>
 
 
-    <nav>
+    <nav class="sr-fade">
         <ul>
+            <a href="https://hntokj.github.io/jmweb-season25patchnotes01/">
             <img src="https://hntokj.github.io/jmweb-season25patchnotes01/images/suparrow_midasi.jpg" alt="25レジェンド">
-            <li><a href="https://hntokj.github.io/jmweb-season25patchnotes01/"target="_blank">【APEX】S25パッチノートまとめ!!（レジェンド編）</a></li> 
+            </a>
+            <li><a href="https://hntokj.github.io/jmweb-season25patchnotes01/">【APEX】S25パッチノートまとめ!!（レジェンド編）</a></li> 
         </ul>
     </nav>
 
-    <nav>
+    <nav class="sr-fade">
         <ul>
+            <a href="https://hntokj.github.io/jmweb-season25newchar/">
             <img src="https://hntokj.github.io/jmweb-season25newchar/images/suparrow.webp" alt="スパロー">
-            <li><a href="https://hntokj.github.io/jmweb-season25newchar/"target="_blank">【APEX】S25新キャラ「スパロー」最新情報!!</a></li> 
+            </a>
+            <li><a href="https://hntokj.github.io/jmweb-season25newchar/">【APEX】S25新キャラ「スパロー」最新情報!!</a></li> 
         </ul>
     </nav>
 
-    <nav>
+    <nav class="sr-fade">
         <ul>
+            <a href="https://hntokj.github.io/jmweb-season24weapon/">
             <img src="https://hntokj.github.io/jmweb-season24/images/a-senaru.png" alt="アーセナル">
-            <li><a href="https://hntokj.github.io/jmweb-season24weapon/"target="_blank">【APEX】シーズン24 最新情報!!!（武器調整）</a></li> 
+            </a>
+            <li><a href="https://hntokj.github.io/jmweb-season24weapon/">【APEX】シーズン24 最新情報!!!（武器調整）</a></li> 
         </ul>
     </nav>
    </div> 
 
-    <nav>
+    <nav class="sr-fade">
         <ul>
+            <a href="https://hntokj.github.io/jmweb-season24/">
             <img src="https://hntokj.github.io/jmweb-season24/images/a-senaru.png" alt="アーセナル">
-            <li><a href="https://hntokj.github.io/jmweb-season24/"target="_blank">【APEX】シーズン24 最新情報!!!〜簡単解説〜</a></li> 
+            </a>
+            <li><a href="https://hntokj.github.io/jmweb-season24/">【APEX】シーズン24 最新情報!!!〜簡単解説〜</a></li> 
         </ul>
     </nav>
 
-     <nav>
+     <nav class="sr-fade">
         <ul>
+            <a href="https://hntokj.github.io/jmweb-season23-1/">
             <img src="https://hntokj.github.io/jmweb-season23-1/images/raihura.png" alt="season23-1">
-            <li><a href="https://hntokj.github.io/jmweb-season23-1/"target="_blank">【APEX】シーズン23前半 パッチノートまとめ!!</a></li>
+            </a>
+            <li><a href="https://hntokj.github.io/jmweb-season23-1/">【APEX】シーズン23前半 パッチノートまとめ!!</a></li>
         </ul>
     </nav>
 
-    <nav>
+    <nav class="sr-fade">
         <ul>
+            <a href="https://hntokj.github.io/jmweb-season22-2.com/">
             <img src="https://hntokj.github.io/jmweb-season22.com/web%20Apex%E7%94%BB%E5%83%8F/E-District.jpg" alt="season22-2">
-            <li><a href="https://hntokj.github.io/jmweb-season22-2.com/"target="_blank">【APEX】シーズン22後半 最新情報!!</a></li> 
+            </a>
+            <li><a href="https://hntokj.github.io/jmweb-season22-2.com/">【APEX】シーズン22後半 最新情報!!</a></li> 
         </ul>
     </nav>
 
-    <nav>
+    <nav class="sr-fade">
         <ul>
+            <a href="https://hntokj.github.io/jmweb-season22.com/">
             <img src="https://hntokj.github.io/jmweb-season22.com/web%20Apex%E7%94%BB%E5%83%8F/E-District.jpg" alt="season22-1">
-            <li><a href="https://hntokj.github.io/jmweb-season22.com/"target="_blank">【APEX】シーズン22前半最新情報まとめ</a></li> 
+            </a>
+            <li><a href="https://hntokj.github.io/jmweb-season22.com/">【APEX】シーズン22前半最新情報まとめ</a></li> 
         </ul>
     </nav>
 
-    <nav>
+    <nav class="sr-fade">
         <ul>
+            <a href="######">
             <img src="images/web_top.png" alt="######">
-            <li><a href="######"target="_blank">######</a></li> 
+            </a>
+            <li><a href="######">######</a></li> 
         </ul>
     </nav>
+    </div>
 
 
 <div class="bottom">
@@ -128,5 +169,22 @@
 
     
 </main> 
+
+<script>
+  ScrollReveal().reveal('.sr-fade', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '40px',
+    easing: 'ease-out',
+    interval: 200, // 順番に出てくる
+    reset: false   // 一度だけアニメ
+  });
+</script>
+
+
+<!--スクロールしたら表示-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
 </body>  
 </html>

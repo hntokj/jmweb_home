@@ -18,17 +18,22 @@ body{
 
 
 /*ボタン⬇️*/
-article .home{
-    background-color:rgb(0, 250, 65);
-    color:aliceblue
+article .link h5{
+  font-size: 1.8em;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: whitesmoke;
+  text-align: center;
 }
-article .youtube{
-    background-color:red;
-    color:aliceblue
+
+article .home li{
+    color:rgb(0, 250, 65);
 }
-article .X{
-    background-color:black;
-    color:aliceblue
+article .youtube li{
+    color: rgba(255, 0, 0);
+}
+article .X li{
+    color:rgb(0, 140, 255);
 }
 
 /*article ul li a{
@@ -51,7 +56,6 @@ text-decoration: underline double;
 
 article ul li a {
   background: linear-gradient(to right, #1f1c2c, #928dab);
-  color: white;
   font-size: 1.8em;
   padding-left: 5px;
   padding-right: 5px; 
@@ -249,7 +253,6 @@ main section ul li a:hover {
 
 article ul li a {
   background: linear-gradient(to right, #1f1c2c, #928dab);
-  color: white;
   font-size: 1.5em;
   font-family: 'Orbitron', sans-serif;
   border-radius: 3px;

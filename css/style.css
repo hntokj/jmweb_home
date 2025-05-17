@@ -5,13 +5,13 @@
     margin-top: 3%;
 }
 header .top img{ /*top画像*/
-    width: 95%;
+    width: 80%;
     border-bottom: 20px double black;
 }
 body{
     background-image: url("../images/web-bg.jpg");
     background-size: contain;
-    font-family:"游ゴシック","ヒラギノ角ゴ ProN";
+    font-family: 'Noto Sans JP', sans-serif;
     width:100%;
 }
 
@@ -31,12 +31,12 @@ article .X{
     color:aliceblue
 }
 
-article ul li a{
+/*article ul li a{
     display:block;
     padding:20px;
     font-size: 30px;
     font-weight: 900;
-}
+}*/
 article ul{
     width: 70%;
     margin: 20px auto;
@@ -45,9 +45,24 @@ article ul{
 article ul li{/*ボタンの間*/
     margin-bottom:15px;
 }
-article ul li a:hover{
+/*article ul li a:hover{
 text-decoration: underline double;
+}*/
+
+article ul li a {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
 }
+article ul li a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
 article nav{
     width:70%;
     background-image: url("../images/web_topぼかし.png"); 
@@ -61,16 +76,27 @@ article nav{
 
 
 main section h4{
-    font-size: 45px;
+    font-size: 2.0em;
     font-weight: 800;
     text-align: center;
     color: white;
 }
-main section nav{/*かこい*/
+/*main section nav{/*かこい
     width: 95%;
     background-color: aliceblue;
     margin: 10px auto;
+}*/
+main section nav {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+main section nav:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+}
+
 main section ul{
     display:flex;
     margin: 10px auto;
@@ -119,7 +145,103 @@ main section nav img{
     font-weight: 900;
     margin:auto 0px;
 }
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+/* アニメーション共通設定 */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* トップ画像フェードイン */
+header .top img {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* 見出しアニメーション */
+main section h4 {
+  animation: slideInLeft 1.2s ease-out;
+}
+
+/* サイトリンクごとにふわっと表示 */
+main section nav {
+  animation: fadeInUp 1.2s ease-in-out;
+  animation-fill-mode: both;
+}
+
+/* ホバーで画像を拡大 */
+main section nav img {
+  transition: transform 0.4s ease;
+}
+main section nav img:hover {
+  transform: scale(1.05);
+}
+
+/* リンクホバーアニメーション */
+main section ul li a {
+  transition: all 0.3s ease;
+}
+main section ul li a:hover {
+  color: #ff5722;
+  border-color: #ff5722;
+}
+
+/* 下部プロフィール画像にアニメーション */
+.bottom img {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* ローディング画面の白背景 
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:  url("../images/web-bg.jpg");
+  background-size: contain;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}*/
+
+/*スクロールしたら表示*/
+.sr-fade {
+  opacity: 0;
+}
+
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 @media screen and (max-width:640px){
+
+  header .top img{ /*top画像*/
+    width: 90%;
+    border-bottom: 20px double black;
+}
+
+  main section h4{
+    font-size: 1.8em;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
 
 
 }
